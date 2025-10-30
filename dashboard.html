@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | eConsent Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- === Navigation Bar === -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fas fa-file-signature"></i>
+      <h1>Electronic Consent Application</h1>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <!-- Logout Button -->
+    <button class="logout-btn" id="logout-btn">
+      <i class="fas fa-sign-out-alt"></i> Logout
+    </button>
+  </header>
+
+    <!-- ======= SIDEBAR ======= -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="dashboard.html" class="active"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+            <li><a href="user-management.html"><i class="fas fa-users"></i> User Management</a></li>
+            <li><a href="patient-management.html"><i class="fas fa-user-injured"></i> Patient Management</a></li>
+            <li><a href="document-management.html"><i class="fas fa-file-alt"></i> Document Management</a></li>
+            <li><a href="form-builder.html"><i class="fas fa-wpforms"></i> Form Builder</a></li>
+            <li><a href="signature.html"><i class="fas fa-signature"></i> Electronic Signature</a></li>
+            <li><a href="audit-trail.html"><i class="fas fa-history"></i> Audit Trail</a></li>
+            <li><a href="notifications.html"><i class="fas fa-bell"></i> Notifications</a></li>
+        </ul>
+    </aside>
+
+    <!-- ======= MAIN CONTENT ======= -->
+    <main class="main-content">
+        <section class="dashboard-header">
+            <h1>Dashboard Overview</h1>
+            <p>Welcome back, <span id="userName">User</span> 👋</p>
+        </section>
+
+        <!-- ======= DASHBOARD CARDS ======= -->
+        <section class="dashboard-cards">
+            <div class="card purple">
+                <i class="fas fa-users"></i>
+                <h3>Total Users</h3>
+                <p>120</p>
+            </div>
+
+            <div class="card blue">
+                <i class="fas fa-user-injured"></i>
+                <h3>Active Patients</h3>
+                <p>80</p>
+            </div>
+
+            <div class="card green">
+                <i class="fas fa-file-signature"></i>
+                <h3>Documents Signed</h3>
+                <p>230</p>
+            </div>
+
+            <div class="card orange">
+                <i class="fas fa-hourglass-half"></i>
+                <h3>Pending Approvals</h3>
+                <p>14</p>
+            </div>
+        </section>
+
+        <!-- ======= CHART AREA ======= -->
+        <section class="chart-area">
+            <h2>Activity Overview</h2>
+            <div class="chart-placeholder">
+                <p>📊 Chart visualization coming soon...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

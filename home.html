@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | eConsent Application</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="home-page">
+  <!-- === Navigation Bar === -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fas fa-file-signature"></i>
+      <h1>Electronic Consent Application</h1>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links">
+      <a href="home.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Logout Button -->
+    <button class="logout-btn" id="logout-btn">
+      <i class="fas fa-sign-out-alt"></i> Logout
+    </button>
+  </header>
+
+  <!-- === Main Content === -->
+  <main class="home-container">
+    <h2 class="welcome-text">Welcome, Faeza!</h2>
+    <p class="sub-text">Please select a module to continue.</p>
+
+    <!-- === Module Cards Grid === -->
+    <div class="modules-grid">
+      <div class="module-card" onclick="location.href='user-management.html'">
+        <i class="fas fa-user-cog"></i>
+        <h3>User Management</h3>
+      </div>
+
+      <div class="module-card" onclick="location.href='patient-management.html'">
+        <i class="fas fa-user-md"></i>
+        <h3>Patient Management</h3>
+      </div>
+
+      <div class="module-card" onclick="location.href='document-management.html'">
+        <i class="fas fa-file-alt"></i>
+        <h3>Document Management</h3>
+      </div>
+
+      <div class="module-card" onclick="location.href='form-builder.html'">
+        <i class="fas fa-list-alt"></i>
+        <h3>Form Builder</h3>
+      </div>
+
+      <div class="module-card" onclick="location.href='signature.html'">
+        <i class="fas fa-pen-nib"></i>
+        <h3>Electronic Signature</h3>
+      </div>
+
+      <div class="module-card" onclick="location.href='audit-trail.html'">
+        <i class="fas fa-history"></i>
+        <h3>Audit Trail</h3>
+      </div>
+
+      <div class="module-card" onclick="location.href='dashboard.html'">
+        <i class="fas fa-chart-line"></i>
+        <h3>Dashboard</h3>
+      </div>
+
+      <div class="module-card" onclick="location.href='notifications.html'">
+        <i class="fas fa-bell"></i>
+        <h3>Notifications</h3>
+      </div>
+    </div>
+  </main>
+
+  <!-- === Footer === -->
+  <footer class="footer">
+    <p>&copy; 2025 Electronic Consent Application. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
